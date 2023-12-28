@@ -19,8 +19,8 @@ public class OneOfEachStats1 {
 		    int sum = 0;
 
 		    while (baby != (isGirl && isBoy)) {
-			    int birth = (int)(Math.random() * 2); // 0 represents a boy and 1 represents a girl
-			    if (birth == 0) {
+			    double birth = (Math.random()); // birth < 0.5 represents a boy and birth >=0.5 represents a girl
+			    if (birth < 0.5) {
 				isBoy = true;
 				System.out.print("b ");
 
