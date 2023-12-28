@@ -4,6 +4,20 @@
  */
 public class InOrder {
 	public static void main (String[] args) {
-		//// Write your code here
+		int randomInteger = (int)(Math.random() * 10);  
+		int previousInteger = randomInteger;
+		System.out.print(randomInteger);
+
+		do {
+			randomInteger = (int)(Math.random() * 10);
+			if (randomInteger >= previousInteger){
+				System.out.print(" " + randomInteger);
+				previousInteger = randomInteger;
+			}
+				
+		} while (previousInteger <= randomInteger);
+
+		System.out.println();
+
 	}
 }
