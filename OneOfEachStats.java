@@ -39,15 +39,13 @@ public class OneOfEachStats {
 		    while (baby != (isGirl && isBoy)) {
 			    double birth = generator.nextDouble(); // birth < 0.5 represents a boy and birth >=0.5 represents a girl
 			    if (birth < 0.5) {
-				isBoy = true;
-				System.out.print("b ");
-
+				    isBoy = true;
 			    } else {
-				isGirl = true;
-				System.out.print("g ");
+				    isGirl = true;
 			    }
 			    sum++;
 		    }
+		    
 		    switch (sum) {
 		        case 2: twoChildren++;
 		        	    break;
@@ -57,8 +55,6 @@ public class OneOfEachStats {
 		                break;        	
 		    }
 
-		    System.out.println();
-		    System.out.println("You made it... and you have " + sum + " children.");
 		    totalSum += sum;
 		}
         double average = (double) totalSum / T;
