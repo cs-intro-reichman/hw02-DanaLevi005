@@ -3,9 +3,7 @@
  */
 public class Divisors {
 	public static void main (String[] args) {
-		if (number == 0) {
-			System.out.println(number);
-		}
+		int number = Integer.parseInt(args[0]);
 		for (int i = 1; i < number++; i++) {
 			if (number % i == 0) {
 				System.out.println(i);
